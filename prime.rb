@@ -4,7 +4,7 @@ def prime?(integer)
   isprime = true
   while (x <= integer / 2)
     if integer % x == 0 
-      isprme = false 
+      isprime = false 
       break
       x += 1 
   end
