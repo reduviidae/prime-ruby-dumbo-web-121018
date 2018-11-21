@@ -1,12 +1,15 @@
 # Add  code here!
 def prime?(integer)
-  x = 2 
-  isprime = true
-  while (x <= integer / 2)
-    if integer % x == 0 
-      isprme = false 
-      break
-      x += 1 
+  start = 2
+  primes = (start..number).to_a
+  (start..number).each do |no|
+    (start..no).each do |num|
+      if ( no % num  == 0) && num != no
+        primes.delete(no)
+        break
+      end
+    end
   end
+  primes
 end
   
