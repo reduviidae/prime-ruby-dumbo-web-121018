@@ -8,6 +8,5 @@ def prime?(integer)
       break
       x += 1 
   end
-  
 end
   
