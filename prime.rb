@@ -14,6 +14,8 @@ def prime?(integer)
     return true 
   elsif integer % 5 == 0 
     return false 
+  elsif integer % 9 == 0 
+    return false
   else 
     return true
   end
